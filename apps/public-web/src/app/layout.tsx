@@ -19,7 +19,11 @@ export default function RootLayout({
     <html lang="fr">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@400;700&display=swap"
           rel="stylesheet"
@@ -31,14 +35,28 @@ export default function RootLayout({
           <div className="container">
             <nav className="navbar">
               <Link href="/" className="logo">
-                <div className="logo-icon">D</div>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 1.5L16.5 9L9 16.5L1.5 9L9 1.5Z"
+                    stroke="#5d5d5e"
+                    strokeWidth="1.6"
+                  />
+                  <path
+                    d="M9 5L13 9L9 13L5 9L9 5Z"
+                    fill="#575757"
+                    opacity="0.35"
+                  />
+                </svg>
 
-                <div>
-                  <div className="logo-title">DocPublish</div>
-                  <div className="logo-subtitle">
-                    Document Publishing Platform
-                  </div>
-                </div>
+                <span className="logo-title">
+                  DocPublish
+                </span>
               </Link>
 
               <div className="nav-links">

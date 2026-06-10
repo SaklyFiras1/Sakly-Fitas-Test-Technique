@@ -14,7 +14,7 @@ export async function generateTitle(text: string): Promise<string | null> {
 
   try {
     const response = await ai.chat.completions.create({
-      model: 'gpt-4o-mini',  // Cheaper than Anthropic, great for titles
+      model: 'gpt-4o-mini', 
       max_tokens: 100,
       messages: [{
         role: 'user',
